@@ -1,0 +1,399 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #EAE8E4;   
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* ----- HEADER SECTION -----*/
+
+header {
+    display: flex;
+}
+
+.sectionHeader {
+    display: flex;
+    background-color: #2D2D2D;
+    border-radius: 0px 0px 32px 32px;    
+    color: white;
+}
+
+.sectionHeaderContentLeft {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0px 24px 80px;
+    justify-content: space-between;
+}
+
+.sectionHeaderTitleBox {
+    width: 80%;
+}
+
+.sectionHeaderTitleBox h1{
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56.88px;
+    letter-spacing: 0.02em;
+    margin: 0;
+}
+
+.sectionHeaderTitleBox p {
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 27.02px;
+    letter-spacing: 0.02em;
+    margin: 10px 0px 0px 0px;
+}
+
+.sectionHeaderImage {
+    width: 30%;
+}
+
+.sectionHeaderCategoryList {
+    display: flex; 
+    width: 100%;
+}
+
+.sectionHeaderCategoryList ul {
+    display: flex;
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.sectionHeaderCategoryListItem {
+    font-size: 20px;
+    line-height: 23.56px;
+    color: #EAE8E4;
+    font-weight: 400;
+}
+
+#monkscroll {
+    width: 70%;
+    height: 100px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+
+}
+
+/* ----- CARDS PRODUCTS SECTION ------*/
+
+.sectionCardProducts {
+    display: flex; 
+    flex-direction: column;
+    padding: 64px 80px 32px 80px;
+    gap: 40px;
+    opacity: 0px;
+}
+
+.sectionCardProductsBoxTitle h1 {
+    margin: 0; 
+    padding: 0;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 46.92px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #2D2D2D;
+}
+
+.sectionCardProductsBoxTitle p {
+    margin: 3px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.27px;
+    letter-spacing: 0.02em;
+}
+
+.sectionCardProductsCardGroup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.sectionCardProductsCardGroup img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+.sectionCardProductsCard {
+    display: flex;
+    width: 22%;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    background: var(--Background-card, #FCFCFD);
+    padding: 5px 5px 10px 5px;
+}
+
+.sectionCardProductsBoxText {
+    width: 90%;
+}
+
+.sectionCardProductsBoxText h1 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin: 0;
+}
+.sectionCardProductsBoxText p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin: 10px 0px 0px 0px;
+}
+
+/* ----- GALERY SECTION ----- */
+
+.sectionGalery {
+    padding: 64px 80px 30px 80px;
+    gap: 24px;
+    display: flex;
+}
+
+.sectionGaleryLeftSide {
+    display: flex; 
+    align-items: center; 
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sectionGaleryLeftSideBoxText {
+    width: 95%;
+}
+
+.sectionGaleryLeftSideBoxText h1 {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 46.92px;
+    letter-spacing: 0.02em;
+    color: #2D2D2D;
+}
+
+.sectionGaleryLeftSideBoxText p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.27px;
+    letter-spacing: 0.02em;
+    color: #2D2D2D;
+    margin: 10px 0px 5px 0px;
+}
+
+
+
+.cardInfo {
+    width: 33.33%;
+    border: 1px solid #7D26C9;
+
+    padding: 24px;
+    gap: 24px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: #FFFFFF;
+
+}
+
+.formInput {
+    padding: 6px 10px 6px 10px;
+    gap: 10px;
+    border-radius: 8px;
+    width: 90%;
+    height: 30px;
+
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    border: none;
+}
+
+.formInput::placeholder {
+    font-size: 16px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #777777;
+}
+
+.inputBox {
+    gap: 20px; 
+    display: flex; 
+    width: 50%;
+    align-items: center;  
+    flex-direction: column; 
+}
+
+.inputBoxContainer {
+    display: flex; 
+    width: 100%; 
+    justify-content: center;
+}
+
+#securityVerificationInput {
+    padding: 6px 10px 6px 10px;
+    gap: 10px;
+    border-radius: 8px;
+    height: 30px;
+    border: none;
+
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+#securityVerificationInput::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.footerList a{
+    text-decoration: none;
+    color: #EAE8E4;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.56px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+
+/* ------- SECTION DOWNLOAD ------- */
+
+.sectionDownload {
+    padding: 10px 80px 60px 80px;
+    gap: 24px;
+    border-radius: 32px 32px 0px 0px;
+}
+
+.sectionDownloadBox {
+    background: #3C0C60; 
+    display: flex;
+    border-radius: 24px;
+    width: 100%;
+    color: #EAE8E4;
+    justify-content: space-between;
+}
+
+.sectionDownloadTextGroup { 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    margin: 40px;
+    gap: 10px;
+}
+
+.sectionDownloadTextGroup h1 {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 46.92px;
+    letter-spacing: 0.02em;       
+    margin: 0; 
+}
+
+.sectionDownloadTextGroup p {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 28.27px;
+    letter-spacing: 0.02em;
+    width: 90%;
+    margin: 0;
+}
+
+.sectionDownloadLinkGroup {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+
+/* ------ PRODUCTS SECTION ------*/
+.sectionProducts {
+    padding: 20px 80px 10px 80px;
+}
+
+.sectionProductsContent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.sectionProductsBoxText {
+    width: 95%;
+}
+
+.sectionProductsBoxText h1 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 46.92px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin: 0;
+}
+
+.sectionProductsContent ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 100%;
+    gap: 30px;
+    justify-content: center;
+}
+
+.sectionProductsProductItem {
+    border-radius: 32px;
+    padding: 8px 40px 8px 40px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    border: 1px solid #7D26C9;
+    backdrop-filter: blur(16px);
+    background: #DFDCD5;
+    color: #7D26C9;
+}
+
+.sectionProductsProductItem:hover {
+    cursor: pointer;
+}
