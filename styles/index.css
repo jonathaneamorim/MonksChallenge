@@ -1,9 +1,44 @@
+/* ----- GERAL ----- */
+
 html, body {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
     background-color: #EAE8E4;   
     font-family: 'Helvetica Neue', sans-serif;
+}
+
+.titleFontWhite {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 46.92px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin: 0;
+    color: #EAE8E4;
+}
+
+.titleFontBlack {
+    margin: 0; 
+    padding: 0;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 46.92px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #2D2D2D;
+}
+
+.paragraphFontBlack {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.27px;
+    letter-spacing: 0.02em;
+    color: #2D2D2D;
+    margin: 10px 0px 5px 0px;
 }
 
 /* ----- HEADER SECTION -----*/
@@ -27,15 +62,7 @@ header {
 }
 
 .sectionHeaderTitleBox {
-    width: 80%;
-}
-
-.sectionHeaderTitleBox h1{
-    font-size: 48px;
-    font-weight: 400;
-    line-height: 56.88px;
-    letter-spacing: 0.02em;
-    margin: 0;
+    width: 70%;
 }
 
 .sectionHeaderTitleBox p {
@@ -44,10 +71,6 @@ header {
     line-height: 27.02px;
     letter-spacing: 0.02em;
     margin: 10px 0px 0px 0px;
-}
-
-.sectionHeaderImage {
-    width: 30%;
 }
 
 .sectionHeaderCategoryList {
@@ -90,26 +113,6 @@ header {
     opacity: 0px;
 }
 
-.sectionCardProductsBoxTitle h1 {
-    margin: 0; 
-    padding: 0;
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 46.92px;
-    letter-spacing: 0.02em;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: #2D2D2D;
-}
-
-.sectionCardProductsBoxTitle p {
-    margin: 3px;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 28.27px;
-    letter-spacing: 0.02em;
-}
 
 .sectionCardProductsCardGroup {
     display: flex;
@@ -153,7 +156,7 @@ header {
     margin: 0;
 }
 .sectionCardProductsBoxText p {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 30px;
     text-align: left;
@@ -168,6 +171,7 @@ header {
     padding: 64px 80px 30px 80px;
     gap: 24px;
     display: flex;
+    justify-content: center;
 }
 
 .sectionGaleryLeftSide {
@@ -182,14 +186,6 @@ header {
     width: 95%;
 }
 
-.sectionGaleryLeftSideBoxText h1 {
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 46.92px;
-    letter-spacing: 0.02em;
-    color: #2D2D2D;
-}
-
 .sectionGaleryLeftSideBoxText p {
     font-size: 24px;
     font-weight: 400;
@@ -197,23 +193,6 @@ header {
     letter-spacing: 0.02em;
     color: #2D2D2D;
     margin: 10px 0px 5px 0px;
-}
-
-
-
-.cardInfo {
-    width: 33.33%;
-    border: 1px solid #7D26C9;
-
-    padding: 24px;
-    gap: 24px;
-    border-radius: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    background: #FFFFFF;
-
 }
 
 .formInput {
@@ -318,14 +297,6 @@ header {
     gap: 10px;
 }
 
-.sectionDownloadTextGroup h1 {
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 46.92px;
-    letter-spacing: 0.02em;       
-    margin: 0; 
-}
-
 .sectionDownloadTextGroup p {
     font-size: 24px;
     font-weight: 300;
@@ -361,22 +332,11 @@ header {
     width: 95%;
 }
 
-.sectionProductsBoxText h1 {
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 46.92px;
-    letter-spacing: 0.02em;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    margin: 0;
-}
-
 .sectionProductsContent ul {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
+    width: 90%;
     height: 100%;
     gap: 30px;
     justify-content: center;
@@ -396,4 +356,208 @@ header {
 
 .sectionProductsProductItem:hover {
     cursor: pointer;
+}
+
+/* ----- INFO CARDS SECTION ----- */
+.sectionInfoCard {
+    padding: 32px 80px 64px 80px;
+    gap: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.sectionInfoCardContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectionInfoCardBoxText h1{
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.sectionInfoCardBoxText p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.sectionInfoCardBoxButton button{
+    width: Hug (180px)px;
+    height: Hug (40px)px;
+    padding: 8px 40px 8px 40px;
+    gap: 0px;
+    border-radius: 4px;
+    opacity: 0px;
+    background: #DFBBFE;
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    border: none;
+}
+
+.cardInfo {
+    width: 25%;
+    border: 1px solid #7D26C9;
+    padding: 24px;
+    gap: 24px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFFFFF;
+}
+
+/* ----- FORMS SECTION ------ */
+.sectionForm {
+    padding: 64px 80px 30px 80px;
+    gap: 30px;
+    opacity: 0px;
+    background: #2D2D2D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionFormContainer {
+    display: flex; 
+    gap: 40px; 
+    align-items: center;
+}
+
+.sectionFormBox {
+    padding: 24px;
+    gap: 32px;
+    border-radius: 24px;
+    opacity: 0px;
+    background: #EAE8E4;
+}
+
+.sectionFormBox form {
+    gap: 32px; 
+    padding: 0; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.sectionFormTitleBox p:first-child {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;  
+}
+
+.sectionFormTitleBox p:last-child {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.85px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.sectionFormSecurity {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+}
+
+.sectionFormSecurity h1 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.sectionFormSecurityBoxValues {
+    display: flex;
+    padding: 10px;
+    gap: 24px;
+    border-radius: 8px;
+    background: #DFDCD5;
+}
+
+.sectionFormSecurityValues {
+    font-size: 18px;
+    font-weight: 400 bold;
+    line-height: 23.86px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #7D26C9;
+}
+
+#buttonResult {
+    padding: 12px 40px 12px 40px;
+    border-radius: 4px;
+    opacity: 0.5px;
+    background: #DFBBFE;
+    border: none;
+}
+
+#buttonResult:hover {
+    cursor: pointer;
+}
+
+/* ----- FOOTER LINE SECTION ----- */
+
+.sectionFooterLine {
+    width: 100%; 
+    padding: 40px 0px 0px 0px;
+}
+
+.sectionFooterLine hr {
+    border: none;
+    height: 1px;
+    background-color: #DFBBFE ;
+}
+
+footer {
+    padding: 10px 120px 0px 120px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer div:first-child {
+    gap: 40px; 
+    display: flex; 
+    justify-content: center;
+}
+
+footer div:last-child h1 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #EAE8E4;
+}
+
+footer div:last-child ul {
+    list-style-type: none; 
+    padding: 0; margin: 0; 
+    display: flex; 
+    align-items: center; 
+    gap: 40px;
 }
