@@ -12,9 +12,6 @@ html, body {
     font-weight: 400;
     line-height: 46.92px;
     letter-spacing: 0.02em;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     margin: 0;
     color: #EAE8E4;
 }
@@ -26,9 +23,6 @@ html, body {
     font-weight: 400;
     line-height: 46.92px;
     letter-spacing: 0.02em;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color: #2D2D2D;
 }
 
@@ -45,6 +39,8 @@ html, body {
 
 header {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .sectionHeader {
@@ -92,15 +88,13 @@ header {
     line-height: 23.56px;
     color: #EAE8E4;
     font-weight: 400;
+    white-space: nowrap;
 }
 
 #monkscroll {
     width: 70%;
     height: 100px;
-    gap: 0px;
     border: 1px 0px 0px 0px;
-    opacity: 0px;
-
 }
 
 /* ----- CARDS PRODUCTS SECTION ------*/
@@ -150,18 +144,12 @@ header {
     font-size: 24px;
     font-weight: 400;
     line-height: 36px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     margin: 0;
 }
 .sectionCardProductsBoxText p {
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     margin: 10px 0px 0px 0px;
 }
 
@@ -182,6 +170,13 @@ header {
     align-items: center;
 }
 
+.sectionGaleryLeftSide div:last-child img {
+    width: 100%; 
+    border-radius: 24px; 
+    margin: 0; 
+    padding: 0;
+}
+
 .sectionGaleryLeftSideBoxText {
     width: 95%;
 }
@@ -195,80 +190,20 @@ header {
     margin: 10px 0px 5px 0px;
 }
 
-.formInput {
-    padding: 6px 10px 6px 10px;
-    gap: 10px;
-    border-radius: 8px;
-    width: 90%;
-    height: 30px;
-
-
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    border: none;
-}
-
-.formInput::placeholder {
-    font-size: 16px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: #777777;
-}
-
-.inputBox {
-    gap: 20px; 
+.sectionGaleryRightSide {
     display: flex; 
-    width: 50%;
-    align-items: center;  
     flex-direction: column; 
+    align-items: center; 
+    justify-content: space-between;
 }
 
-.inputBoxContainer {
-    display: flex; 
+.sectionGaleryRightSide div {
+    width: 100%;
+}
+
+.sectionGaleryRightSide div img {
     width: 100%; 
-    justify-content: center;
-}
-
-#securityVerificationInput {
-    padding: 6px 10px 6px 10px;
-    gap: 10px;
-    border-radius: 8px;
-    height: 30px;
-    border: none;
-
-
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-}
-
-#securityVerificationInput::placeholder {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 30px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-}
-
-.footerList a{
-    text-decoration: none;
-    color: #EAE8E4;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 23.56px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-
+    border-radius: 24px;
 }
 
 
@@ -298,8 +233,8 @@ header {
 }
 
 .sectionDownloadTextGroup p {
-    font-size: 24px;
-    font-weight: 300;
+    font-size: 22px;
+    font-weight: 400;
     line-height: 28.27px;
     letter-spacing: 0.02em;
     width: 90%;
@@ -376,35 +311,21 @@ header {
     font-size: 26px;
     font-weight: 400;
     line-height: 36px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
 }
 
 .sectionInfoCardBoxText p {
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
 }
 
 .sectionInfoCardBoxButton button{
-    width: Hug (180px)px;
-    height: Hug (40px)px;
     padding: 8px 40px 8px 40px;
-    gap: 0px;
     border-radius: 4px;
-    opacity: 0px;
     background: #DFBBFE;
-
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     border: none;
 }
 
@@ -421,10 +342,10 @@ header {
 }
 
 /* ----- FORMS SECTION ------ */
+
 .sectionForm {
     padding: 64px 80px 30px 80px;
     gap: 30px;
-    opacity: 0px;
     background: #2D2D2D;
     display: flex;
     flex-direction: column;
@@ -438,11 +359,12 @@ header {
     align-items: center;
 }
 
+/* ----- FORM BOX ----- */
+
 .sectionFormBox {
     padding: 24px;
     gap: 32px;
     border-radius: 24px;
-    opacity: 0px;
     background: #EAE8E4;
 }
 
@@ -458,19 +380,39 @@ header {
 .sectionFormTitleBox p:first-child {
     font-size: 20px;
     font-weight: 400;
-    line-height: 30px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;  
+    line-height: 30px; 
 }
 
 .sectionFormTitleBox p:last-child {
     font-size: 16px;
     font-weight: 400;
     line-height: 18.85px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+}
+
+.inputBoxContainer {
+    display: flex; 
+    width: 100%; 
+    justify-content: center;
+}
+
+.inputBox {
+    gap: 20px; 
+    display: flex; 
+    width: 50%;
+    align-items: center;  
+    flex-direction: column; 
+}
+
+.formInput {
+    padding: 6px 10px 6px 10px;
+    gap: 10px;
+    border-radius: 8px;
+    width: 90%;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    border: none;
 }
 
 .sectionFormSecurity {
@@ -479,13 +421,40 @@ header {
     gap: 19px;
 }
 
+.formInput::placeholder {
+    font-size: 16px;
+    color: #777777;
+}
+
+#securityVerificationInput {
+    padding: 6px 10px 6px 10px;
+    gap: 10px;
+    border-radius: 8px;
+    height: 30px;
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+#securityVerificationInput::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.footerList a{
+    text-decoration: none;
+    color: #EAE8E4;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.56px;
+
+}
 .sectionFormSecurity h1 {
     font-size: 24px;
     font-weight: 500;
     line-height: 36px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
 }
 
 .sectionFormSecurityBoxValues {
@@ -500,9 +469,6 @@ header {
     font-size: 18px;
     font-weight: 400 bold;
     line-height: 23.86px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color: #7D26C9;
 }
 
@@ -549,8 +515,6 @@ footer div:last-child h1 {
     font-weight: 500;
     line-height: 36px;
     text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color: #EAE8E4;
 }
 
