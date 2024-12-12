@@ -7,6 +7,8 @@
     <title>Monks Project</title>
     <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/mobileRender.css">
+    <link rel="stylesheet" href="styles/footerStyles.css">
 </head>
 
 <body>
@@ -18,7 +20,7 @@
 
                 <div class="sectionHeaderCategoryList">
                     <img src="svg/monkslogo.svg" alt="Monks Logo">
-                    <ul>
+                    <ul class="menuItens">
                         <li class="sectionHeaderCategoryListItem">Categoria 1</li>
                         <li class="sectionHeaderCategoryListItem">Categoria 2</li>
                         <li class="sectionHeaderCategoryListItem">Categoria 3</li>
@@ -32,7 +34,7 @@
                         commodo aenean viverra</p>
                 </div>
 
-                <div style="display: flex; align-items: center;">
+                <div>
                     <img id="monkscroll" src="svg/monkscrollseta.svg" alt="scroll">
                 </div>
 
@@ -233,11 +235,10 @@
                 <form>
 
                     <div class="inputBoxContainer">
+
                         <div class="inputBox">
                             <input class="formInput" type="text" placeholder="Categoria*">
                             <input class="formInput" type="text" placeholder="Categoria*">
-                        </div>
-                        <div class="inputBox">
                             <input class="formInput" type="text" placeholder="Categoria*">
                             <input class="formInput" type="text" placeholder="Categoria*">
                         </div>
@@ -248,15 +249,21 @@
 
                         <h1>Verificação de segurança</h1>
 
-                        <div class="sectionFormSecurityBoxValues">
+                        <div class="sectionFormSecurityBox">
 
-                            <div id="value1" class="sectionFormSecurityValues"></div>
-                            <img src="svg/forms-box/plusicon.svg" alt="plus icon">
-                            <div id="value2" class="sectionFormSecurityValues"></div>
+                            <div class="sectionFormSecurityBoxValues">
 
+                                <div id="value1" class="sectionFormSecurityValues"></div>
+                                <img src="svg/forms-box/plusicon.svg" alt="plus icon">
+                                <div id="value2" class="sectionFormSecurityValues"></div>
+    
+                            </div>
+    
+                            <img src="svg/forms-box/resultIcon.svg" alt="result Icon">
+                            <input type="text" name="Resultado" id="securityVerificationInput" placeholder="Resultado">
                         </div>
-                        <img src="svg/forms-box/resultIcon.svg" alt="result Icon">
-                        <input type="text" name="Resultado" id="securityVerificationInput" placeholder="Resultado">
+                        
+                    
                     </div>
                     <div>
                         <button id="buttonResult">Lorem ipsum</button>

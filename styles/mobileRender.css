@@ -1,0 +1,109 @@
+@media (max-width: 1180px) {
+    
+}
+
+@media (max-width: 900px) {
+
+    .titleFontBlack {
+        margin: 0; 
+        padding: 0;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 46.92px;
+        letter-spacing: 0.02em;
+        color: #2D2D2D;
+    }
+
+    .sectionHeader {
+        width: 100%;
+    }
+
+    .sectionHeaderContentLeft {
+        border: 1px solid white;
+        padding: 20px 0px 0px 20px;
+        width: 90%;
+    }
+
+    .sectionCardProductsCardGroup {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .sectionHeaderCategoryList ul {
+        display: none;
+        
+    }
+
+    .titleFontWhite {
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: 0.02em;
+        margin: 0;
+        color: #EAE8E4;
+    }
+
+    .sectionHeaderTitleBox p {
+        font-size: 20px;
+    }
+
+    .sectionCardProductsCard {
+        width: 100%;
+    }
+
+
+    .sectionHeaderImage {
+        width: auto;
+        border: 1px solid white;
+    }
+    
+    .sectionHeaderImage img {
+        width: 80%;
+        border: 1px solid white;
+    }
+
+/* -------------------------------------- FORM --------------------------------*/
+
+    .sectionFormContainer {
+        flex-direction: column;
+    }
+
+    .inputBoxContainer {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .sectionFormBox form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+    }
+
+    .formInput {
+        width: 70%;
+        border: 1px solid black;
+    }
+    
+    .inputBox {
+        border: 1px solid black;  
+        width: 100%;
+    }
+
+    .sectionFormSecurity {
+        flex-direction: column;
+    }
+
+    #securityVerificationInput {
+        width: 40%;
+    }
+
+
+    .sectionFormBox {
+        width: 100%;
+    }
+
+    .sectionForm {
+        padding: 20px 40px 20px 40px;
+    }
+}

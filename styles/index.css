@@ -97,6 +97,9 @@ header {
     border: 1px 0px 0px 0px;
 }
 
+.sectionHeaderImage {
+}
+
 /* ----- CARDS PRODUCTS SECTION ------*/
 
 .sectionCardProducts {
@@ -112,7 +115,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0px;
     width: 100%;
     justify-content: space-between;
 }
@@ -342,186 +344,3 @@ header {
 }
 
 /* ----- FORMS SECTION ------ */
-
-.sectionForm {
-    padding: 64px 80px 30px 80px;
-    gap: 30px;
-    background: #2D2D2D;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.sectionFormContainer {
-    display: flex; 
-    gap: 40px; 
-    align-items: center;
-}
-
-/* ----- FORM BOX ----- */
-
-.sectionFormBox {
-    padding: 24px;
-    gap: 32px;
-    border-radius: 24px;
-    background: #EAE8E4;
-}
-
-.sectionFormBox form {
-    gap: 32px; 
-    padding: 0; 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center;
-}
-
-.sectionFormTitleBox p:first-child {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px; 
-}
-
-.sectionFormTitleBox p:last-child {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18.85px;
-}
-
-.inputBoxContainer {
-    display: flex; 
-    width: 100%; 
-    justify-content: center;
-}
-
-.inputBox {
-    gap: 20px; 
-    display: flex; 
-    width: 50%;
-    align-items: center;  
-    flex-direction: column; 
-}
-
-.formInput {
-    padding: 6px 10px 6px 10px;
-    gap: 10px;
-    border-radius: 8px;
-    width: 90%;
-    height: 30px;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-    border: none;
-}
-
-.sectionFormSecurity {
-    display: flex;
-    align-items: center;
-    gap: 19px;
-}
-
-.formInput::placeholder {
-    font-size: 16px;
-    color: #777777;
-}
-
-#securityVerificationInput {
-    padding: 6px 10px 6px 10px;
-    gap: 10px;
-    border-radius: 8px;
-    height: 30px;
-    border: none;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-}
-
-#securityVerificationInput::placeholder {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 30px;
-}
-
-.footerList a{
-    text-decoration: none;
-    color: #EAE8E4;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 23.56px;
-
-}
-.sectionFormSecurity h1 {
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 36px;
-}
-
-.sectionFormSecurityBoxValues {
-    display: flex;
-    padding: 10px;
-    gap: 24px;
-    border-radius: 8px;
-    background: #DFDCD5;
-}
-
-.sectionFormSecurityValues {
-    font-size: 18px;
-    font-weight: 400 bold;
-    line-height: 23.86px;
-    color: #7D26C9;
-}
-
-#buttonResult {
-    padding: 12px 40px 12px 40px;
-    border-radius: 4px;
-    opacity: 0.5px;
-    background: #DFBBFE;
-    border: none;
-}
-
-#buttonResult:hover {
-    cursor: pointer;
-}
-
-/* ----- FOOTER LINE SECTION ----- */
-
-.sectionFooterLine {
-    width: 100%; 
-    padding: 40px 0px 0px 0px;
-}
-
-.sectionFooterLine hr {
-    border: none;
-    height: 1px;
-    background-color: #DFBBFE ;
-}
-
-footer {
-    padding: 10px 120px 0px 120px;
-    gap: 30px;
-    display: flex;
-    flex-direction: column;
-}
-
-footer div:first-child {
-    gap: 40px; 
-    display: flex; 
-    justify-content: center;
-}
-
-footer div:last-child h1 {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 36px;
-    text-align: center;
-    color: #EAE8E4;
-}
-
-footer div:last-child ul {
-    list-style-type: none; 
-    padding: 0; margin: 0; 
-    display: flex; 
-    align-items: center; 
-    gap: 40px;
-}
