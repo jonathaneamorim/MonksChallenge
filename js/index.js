@@ -28,10 +28,14 @@ menuButton.addEventListener('click', () => {
         document.getElementById("menuCollapse").style.display = "inherit";
         document.getElementById("mainMenu").style.backgroundColor = "#2D2D2D"
         document.getElementById("backgroundHidden").style.display = "inherit";
+        document.body.style.touchAction = "none"; // Bloqueia ações de toque
+        document.body.style.overflow = "hidden";  // Remove o scroll
     } else {
         document.getElementById("menuCollapse").style.display = "none";
         document.getElementById("mainMenu").style.backgroundColor = "transparent"
         document.getElementById("backgroundHidden").style.display = "none";
+        document.body.style.overflow = '';
+        document.body.style.touchAction = "";
     }
 
 var backButton = document.querySelector("#back");
@@ -40,6 +44,8 @@ backButton.addEventListener('click', () => {
     document.getElementById("menuCollapse").style.display = "none";
     document.getElementById("mainMenu").style.backgroundColor = "transparent"
     document.getElementById("backgroundHidden").style.display = "none";
+    document.body.style.overflow = '';
+    document.body.style.touchAction = '';
 })
 
 })
