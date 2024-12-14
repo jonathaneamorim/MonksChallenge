@@ -19,3 +19,27 @@ buttom.addEventListener('click', () => {
         alert("Correct answer");
     }
 })
+
+
+var menuButton = document.querySelector("#menuIcon");
+
+menuButton.addEventListener('click', () => {
+    if(document.getElementById("menuCollapse").style.display == "none") {
+        document.getElementById("menuCollapse").style.display = "inherit";
+        document.getElementById("mainMenu").style.backgroundColor = "#2D2D2D"
+        document.getElementById("backgroundHidden").style.display = "inherit";
+    } else {
+        document.getElementById("menuCollapse").style.display = "none";
+        document.getElementById("mainMenu").style.backgroundColor = "transparent"
+        document.getElementById("backgroundHidden").style.display = "none";
+    }
+
+var backButton = document.querySelector("#back");
+
+backButton.addEventListener('click', () => {
+    document.getElementById("menuCollapse").style.display = "none";
+    document.getElementById("mainMenu").style.backgroundColor = "transparent"
+    document.getElementById("backgroundHidden").style.display = "none";
+})
+
+})

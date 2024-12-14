@@ -5,6 +5,9 @@ html, body {
     padding: 0;
     background-color: #EAE8E4;   
     font-family: 'Helvetica Neue', sans-serif;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .titleFontWhite {
@@ -38,19 +41,32 @@ html, body {
 /* ----- HEADER SECTION -----*/
 
 header {
-    display: flex;
-    justify-content: space-between;
     width: 100%;
-}
-
-.sectionHeader {
-    display: flex;
+    height: 50vh;
     background-color: #2D2D2D;
     border-radius: 0px 0px 32px 32px;    
     color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuCollaps {
+    display: none;
+}
+
+.sectionHeaderImage {
+    width: 30%;
+    border-radius: 0px 0px 32px 32px;   
+    overflow: hidden;
+}
+
+.sectionHeaderImage img {
+    width: 100%;
+    height: 100%;
 }
 
 .sectionHeaderContentLeft {
+    width: 50%;
     display: flex;
     flex-direction: column;
     padding: 24px 0px 24px 80px;
@@ -74,6 +90,10 @@ header {
     width: 100%;
 }
 
+#menuIcon {
+    display: none;
+}
+
 .sectionHeaderCategoryList ul {
     display: flex;
     width: 80%;
@@ -81,6 +101,13 @@ header {
     padding: 0;
     justify-content: space-evenly;
     list-style-type: none;
+}
+
+.menuCollapse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .sectionHeaderCategoryListItem {
@@ -95,9 +122,6 @@ header {
     width: 70%;
     height: 100px;
     border: 1px 0px 0px 0px;
-}
-
-.sectionHeaderImage {
 }
 
 /* ----- CARDS PRODUCTS SECTION ------*/
@@ -277,6 +301,8 @@ header {
     height: 100%;
     gap: 30px;
     justify-content: center;
+    padding: 0px;
+    margin: 0px;
 }
 
 .sectionProductsProductItem {
@@ -344,3 +370,183 @@ header {
 }
 
 /* ----- FORMS SECTION ------ */
+
+.sectionForm {
+    padding: 64px 80px 30px 80px;
+    gap: 30px;
+    background: #2D2D2D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionFormContainer {
+    display: flex; 
+    gap: 40px; 
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+/* ----- FORM BOX ----- */
+
+.sectionFormBox {
+    padding: 30px;
+    gap: 32px;
+    border-radius: 24px;
+    background: #EAE8E4;
+}
+
+.sectionFormBox form {
+    padding: 0; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+}
+
+
+.inputBoxContainer {
+    display: flex; 
+    width: 100%; 
+    justify-content: center;
+}
+
+.inputBox {
+    gap: 15px; 
+    display: flex; 
+    width: 100%;
+    align-items: center; 
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0px 20px;
+}
+
+.formInput {
+    padding: 6px 10px 6px 10px;
+    gap: 10px;
+    border-radius: 8px;
+    width: 45%;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    border: none;
+}
+
+.sectionFormSecurity {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+}
+
+.formInput::placeholder {
+    font-size: 16px;
+    color: #777777;
+}
+
+#securityVerificationInput {
+    padding: 6px 10px 6px 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+#securityVerificationInput::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.sectionFormSecurityBox {
+    display: flex; 
+    gap: 20px;
+}
+
+.footerList a{
+    text-decoration: none;
+    color: #EAE8E4;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.56px;
+
+}
+.sectionFormSecurity h1 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+.sectionFormSecurityBoxValues {
+    display: flex;
+    padding: 10px 30px 10px 30px;
+    gap: 20px;
+    border-radius: 8px;
+    background: #DFDCD5;
+}
+
+.sectionFormSecurityValues {
+    font-size: 18px;
+    font-weight: 400 bold;
+    line-height: 23.86px;
+    color: #7D26C9;
+}
+
+#buttonResult {
+    padding: 12px 40px 12px 40px;
+    border-radius: 4px;
+    opacity: 0.5px;
+    background: #DFBBFE;
+    border: none;
+    margin-top: 20px;
+}
+
+#buttonResult:hover {
+    cursor: pointer;
+}
+
+/* ----- FOOTER LINE SECTION ----- */
+
+.sectionFooterLine {
+    width: 100%; 
+    padding: 40px 0px 0px 0px;
+}
+
+.sectionFooterLine hr {
+    border: none;
+    height: 1px;
+    background-color: #DFBBFE ;
+}
+
+footer {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer div:first-child {
+    gap: 40px; 
+    display: flex; 
+    justify-content: center;
+}
+
+footer div:last-child h1 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: center;
+    color: #EAE8E4;
+}
+
+footer div:last-child ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    align-items: center; 
+    gap: 40px;
+}

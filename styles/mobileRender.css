@@ -4,24 +4,104 @@
 
 @media (max-width: 900px) {
 
-    .titleFontBlack {
-        margin: 0; 
-        padding: 0;
-        font-size: 30px;
+    html, body {
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .sectionHeaderImage {
+        margin: 0px 0px 0px -80px;
+        width: 60%;
+    }
+
+    .sectionHeaderImage img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .sectionHeaderContentLeft {
+        padding: 24px 32px 24px 24px;
+        margin-top: 30px;
+    }
+
+    .sectionHeaderCategoryList {
+        display: flex; 
+        width: 100%;
+    }
+
+    .sectionHeaderTitleBox {
+        width: 100%;
+    }
+
+    .sectionHeaderTitleBox p {
+        font-size: 16px;
         font-weight: 400;
-        line-height: 46.92px;
+        line-height: 18.02px;
         letter-spacing: 0.02em;
+    }
+
+    .titleFontBlack {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 28.15px;
+        letter-spacing: 0.02em;
+    }
+
+    .menuCollapse {
+        background: #DFBBFE;
+        width: 100vw;
+        top: 50px;
+        left: 0;
+        height: 45vh;
+        position: absolute;
+        display: none;
+    }
+
+    .menuCollapse ul {
+        width: 100%;
+    }
+
+    .menuCollapse ul li{
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 23.86px;
+        margin: 20px 20px 20px 30px;
         color: #2D2D2D;
+    }
+
+    .backgroundHidden {
+        display: none;
+        width: 100%;
+        position: absolute;
+        height: 49.4%;
+        background: #2D2D2D99;
+        bottom: 0;
+    }
+
+    .sectionHeaderCategoryList {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        padding: 10px 0px 10px 20px;
+    }
+
+    #menuIcon {
+        display: inherit;
+        margin: 0px 0px 0px 10px;
+        padding: 10px;
+    }
+    
+    #menuIcon:hover {
+        cursor: pointer;
     }
 
     .sectionHeader {
         width: 100%;
-    }
-
-    .sectionHeaderContentLeft {
-        border: 1px solid white;
-        padding: 20px 0px 0px 20px;
-        width: 90%;
+        display: flex;
     }
 
     .sectionCardProductsCardGroup {
@@ -50,17 +130,7 @@
     .sectionCardProductsCard {
         width: 100%;
     }
-
-
-    .sectionHeaderImage {
-        width: auto;
-        border: 1px solid white;
-    }
     
-    .sectionHeaderImage img {
-        width: 80%;
-        border: 1px solid white;
-    }
 
 /* -------------------------------------- FORM --------------------------------*/
 
@@ -77,16 +147,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid black;
     }
 
     .formInput {
-        width: 70%;
-        border: 1px solid black;
+        width: 100%;
     }
     
     .inputBox {
-        border: 1px solid black;  
         width: 100%;
     }
 
@@ -106,4 +173,176 @@
     .sectionForm {
         padding: 20px 40px 20px 40px;
     }
+
+
+    /* ----- GALERY SECTION ----- */
+    .sectionGalery {
+        flex-direction: column;
+        padding: 32px 24px 32px 24px;
+        gap: 0;
+
+    }
+
+    .sectionCardProducts {
+        padding: 32px 24px 32px 24px;
+        gap: 24px;
+    }
+
+    .sectionGaleryLeftSideBoxText p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18.85px;
+        letter-spacing: 0.02em;
+    }
+
+    
+/* ------- SECTION DOWNLOAD ------- */
+
+    .sectionDownload {
+        padding: 32px 24px 32px 24px;
+        gap: 24px;
+    }
+
+    .sectionDownloadBox {
+        border-radius: 32px;
+        flex-direction: column;
+        border-radius: 24px;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .sectionDownloadTextGroup {
+        margin: 24px 24px 10px 24px;
+        gap: 8px
+    }
+
+    .sectionDownloadTextGroup h1 {
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 28.15px;
+        letter-spacing: 0.02em;
+    }
+
+    .sectionDownloadTextGroup p {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 18.85px;
+        letter-spacing: 0.05em;
+        width: 90%;
+    }
+
+    .sectionDownloadLinkGroup {
+        margin: 15px;  
+        width: 100%;
+        gap: 10px;
+    }
+    
+    .sectionDownloadLinkGroup a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .sectionDownloadLinkGroup img {
+        width: 90%;
+    }
+
+    .sectionProducts {
+        padding: 32px 24px 32px 24px;
+        gap: 24px;
+    }
+
+    .sectionProductsContent {
+        gap: 20px;
+    }
+
+    .sectionProductsContent ul {
+        width: 100%;
+        height: 100%;
+        gap: 15px;
+    }
+
+    .sectionProductsProductItem {
+        padding: 6px 30px 6px 30px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        margin: 0;
+    }
+
+
+    /* ----- CARD INFO SECTION ----- */
+
+    .sectionInfoCard {
+        padding: 32px 24px 32px 24px;
+        gap: 16px;
+    }
+
+    .sectionInfoCardContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .cardInfo {
+        width: 80%;
+        padding: 24px;
+        gap: 24px;
+    }
+
+    .sectionInfoCardBoxText {
+    }
+
+    .sectionInfoCardBoxText h1 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .sectionForm {
+        padding: 32px 24px 32px 24px;
+        gap: 20px;
+    }
+
+    .sectionFormSecurityBoxValues {
+        border-radius: 8px;   
+        padding: 10px 20px 10px 20px;   
+    }
+
+    .sectionFormSecurityBox {
+        gap: 10px;
+    }
+
+    .sectionFormSecurity h1 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .sectionFormSecurity {
+        align-items: start;
+    }
+
+    footer {
+        padding: 0px;
+        gap: 20px;
+    }
+
+    footer ul {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    footer div:last-child ul {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .footerContentText h1{
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 36px;
+    }
+    .footerList a{
+        font-size: 18px;
+    }
+
 }

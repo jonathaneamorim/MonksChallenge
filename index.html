@@ -12,41 +12,59 @@
 </head>
 
 <body>
-
-    <section class="sectionHeader">
         <header>
 
-            <div class="sectionHeaderContentLeft">
+                <div class="sectionHeaderContentLeft">
 
-                <div class="sectionHeaderCategoryList">
-                    <img src="svg/monkslogo.svg" alt="Monks Logo">
-                    <ul class="menuItens">
-                        <li class="sectionHeaderCategoryListItem">Categoria 1</li>
-                        <li class="sectionHeaderCategoryListItem">Categoria 2</li>
-                        <li class="sectionHeaderCategoryListItem">Categoria 3</li>
-                        <li class="sectionHeaderCategoryListItem">Categoria 4</li>
-                    </ul>
+                    <div class="sectionHeaderCategoryList" id="mainMenu">
+                        <img src="svg/monkslogo.svg" alt="Monks Logo">
+                        <ul class="menuItens">
+                            <li class="sectionHeaderCategoryListItem">Categoria 1</li>
+                            <li class="sectionHeaderCategoryListItem">Categoria 2</li>
+                            <li class="sectionHeaderCategoryListItem">Categoria 3</li>
+                            <li class="sectionHeaderCategoryListItem">Categoria 4</li>
+                        </ul>
+
+                        <span id="menuIcon"><img src="svg/menu.svg" alt=""></span>
+
+                    </div>
+
+                    <div id="menuCollapse" class="menuCollapse">
+                        <ul>
+                            <li>Categoria 1</li>
+                            <li>Categoria 2</li>
+                            <li>Categoria 3</li>
+                            <li>Categoria 4</li>
+                        </ul>
+
+                        <span id="back">
+                            <img src="svg/back.svg" alt="back">
+                        </span>
+                    </div>
+
+
+                    <div class="sectionHeaderTitleBox">
+                        <h1 class="titleFontWhite">Lorem ipsum dolor sit amet consectetur</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque quis
+                            commodo aenean viverra</p>
+                    </div>
+
+                    <div>
+                        <img id="monkscroll" src="svg/monkscrollseta.svg" alt="scroll">
+                    </div>
+
                 </div>
 
-                <div class="sectionHeaderTitleBox">
-                    <h1 class="titleFontWhite">Lorem ipsum dolor sit amet consectetur</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque quis
-                        commodo aenean viverra</p>
+
+                <div class="sectionHeaderImage">
+                    <img src="image.png" alt="header image">
                 </div>
-
-                <div>
-                    <img id="monkscroll" src="svg/monkscrollseta.svg" alt="scroll">
-                </div>
-
-            </div>
-
-
-            <div class="sectionHeaderImage">
-                <img src="svg/monksheader.svg" alt="monksheader">
-            </div>
-
+            
         </header>
-    </section>
+
+        <div id="backgroundHidden" class="backgroundHidden">
+
+        </div>
 
     <section class="sectionCardProducts">
 
@@ -100,7 +118,7 @@
 
             <div class="sectionGaleryLeftSideBoxText">
                 <h1 class="titleFontBlack">Lorem ipsum dolor sit amet consectetur</h1>
-                <p class="paragraphFontBlack">Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque quis commodo
+                <p>Lorem ipsum dolor sit amet consectetur. Semper orci adipiscing faucibus sit scelerisque quis commodo
                 </p>
             </div>
 
@@ -285,7 +303,7 @@
                 <a href=""><img src="svg/social/facebookIcon.svg" alt=""></a>
             </div>
 
-            <div>
+            <div class="footerContentText">
                 <h1>Lorem ipsum dolor sit amet</h1>
                 <ul>
                     <li class="footerList"><a href="#">Lorem ipsum</a></li>
