@@ -1,18 +1,6 @@
-@media (max-width: 1180px) {
-    
-}
-
 @media (max-width: 900px) {
-
-    html, body {
-        max-width: 100%;
-        box-sizing: border-box;
-        overflow-x: hidden;
-    }
-
     .sectionHeaderImage {
-        margin: 0px 0px 0px -80px;
-        width: 60%;
+        width: 30%;
     }
 
     .sectionHeaderImage img {
@@ -21,8 +9,11 @@
     }
 
     .sectionHeaderContentLeft {
-        padding: 24px 32px 24px 24px;
+        padding: 24px 10px 24px 24px;
         margin-top: 30px;
+        width: 60%;
+        justify-content: center;
+        gap: 30px;
     }
 
     .sectionHeaderCategoryList {
@@ -35,10 +26,12 @@
     }
 
     .sectionHeaderTitleBox p {
-        font-size: 16px;
+        font-size: 10px;
         font-weight: 400;
         line-height: 18.02px;
         letter-spacing: 0.02em;
+        width: 100%;
+        border: 1px solid white;
     }
 
     .titleFontBlack {
@@ -86,7 +79,10 @@
         width: 100%;
         top: 0;
         left: 0;
-        padding: 10px 0px 10px 20px;
+    }
+
+    .sectionHeaderCategoryList img{
+        margin: 10px 0px 15px 25px;
     }
 
     #menuIcon {

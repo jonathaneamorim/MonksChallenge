@@ -42,7 +42,7 @@ html, body {
 
 header {
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     background-color: #2D2D2D;
     border-radius: 0px 0px 32px 32px;    
     color: white;
@@ -50,8 +50,17 @@ header {
     justify-content: space-between;
 }
 
-.menuCollaps {
+#menuCollapse {
     display: none;
+}
+
+.collapseContent {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .sectionHeaderImage {
@@ -101,13 +110,6 @@ header {
     padding: 0;
     justify-content: space-evenly;
     list-style-type: none;
-}
-
-.menuCollapse {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .sectionHeaderCategoryListItem {
