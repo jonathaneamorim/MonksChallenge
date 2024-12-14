@@ -28,10 +28,9 @@
     .sectionHeaderTitleBox p {
         font-size: 10px;
         font-weight: 400;
-        line-height: 18.02px;
+        line-height: 20px;
         letter-spacing: 0.02em;
         width: 100%;
-        border: 1px solid white;
     }
 
     .titleFontBlack {
@@ -46,14 +45,16 @@
         width: 100vw;
         top: 50px;
         left: 0;
-        height: 45vh;
+        height: 50vh;
         position: absolute;
         display: none;
+        z-index: 1;
     }
 
     .menuCollapse ul {
-        width: 100%;
+        margin: 0px;
     }
+
 
     .menuCollapse ul li{
         font-size: 20px;
@@ -63,13 +64,20 @@
         color: #2D2D2D;
     }
 
+    .iconBack {
+        display: flex;
+        justify-content: center;
+        margin: 0px 40px 10px 40px;
+    }
+
     .backgroundHidden {
         display: none;
         width: 100%;
         position: absolute;
-        height: 49.4%;
+        height: 44.5vh;
         background: #2D2D2D99;
         bottom: 0;
+        height: 100vh;
     }
 
     .sectionHeaderCategoryList {
@@ -79,6 +87,7 @@
         width: 100%;
         top: 0;
         left: 0;
+        z-index: 1;
     }
 
     .sectionHeaderCategoryList img{
@@ -107,7 +116,6 @@
 
     .sectionHeaderCategoryList ul {
         display: none;
-        
     }
 
     .titleFontWhite {
