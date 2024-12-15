@@ -99,6 +99,14 @@
         display: flex;
     }
 
+    .sectionDownloadLinkGroup img {
+        width: 80%;
+    }
+
+    .sectionCardProductsCard {
+        width: 100%;
+    }
+
     .sectionCardProductsCardGroup {
         flex-direction: column;
         gap: 40px;
