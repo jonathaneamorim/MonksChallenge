@@ -38,14 +38,13 @@ menuButton.addEventListener('click', () => {
         document.body.style.touchAction = "";
     }
 
-var backButton = document.querySelector("#back");
+    var backButton = document.querySelector("#back");
 
-backButton.addEventListener('click', () => {
-    document.getElementById("menuCollapse").style.display = "none";
-    document.getElementById("mainMenu").style.backgroundColor = "transparent"
-    document.getElementById("backgroundHidden").style.display = "none";
-    document.body.style.overflow = '';
-    document.body.style.touchAction = '';
-})
-
+    backButton.addEventListener('click', () => {
+        document.getElementById("menuCollapse").style.display = "none";
+        document.getElementById("mainMenu").style.backgroundColor = "transparent"
+        document.getElementById("backgroundHidden").style.display = "none";
+        document.body.style.overflow = '';
+        document.body.style.touchAction = '';
+    })
 })

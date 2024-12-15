@@ -3,7 +3,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: #EAE8E4;   
+    background-color: #EAE8E4;
     font-family: 'Helvetica Neue', sans-serif;
     max-width: 100%;
     box-sizing: border-box;
@@ -21,7 +21,7 @@ html, body {
 }
 
 .titleFontBlack {
-    margin: 0; 
+    margin: 0;
     padding: 0;
     font-size: 40px;
     font-weight: 400;
@@ -45,7 +45,7 @@ header {
     width: 100%;
     height: 60vh;
     background-color: #2D2D2D;
-    border-radius: 0px 0px 32px 32px;    
+    border-radius: 0px 0px 32px 32px;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -65,7 +65,7 @@ header {
 
 .sectionHeaderImage {
     width: 30%;
-    border-radius: 0px 0px 32px 32px;   
+    border-radius: 0px 0px 32px 32px;
     overflow: hidden;
 }
 
@@ -95,13 +95,19 @@ header {
 }
 
 .sectionHeaderCategoryList {
-    display: flex; 
+    display: flex;
     width: 100%;
     align-items: center;
+    gap: 20px;
 }
 
 #menuIcon {
     display: none;
+}
+
+#menuIcon img{
+    margin: 10px;
+    padding: 0;
 }
 
 .sectionHeaderCategoryList ul {
@@ -129,10 +135,14 @@ header {
     border: 1px 0px 0px 0px;
 }
 
+#monkscroll a img:hover {
+    cursor: pointer;
+}
+
 /* ----- CARDS PRODUCTS SECTION ------*/
 
 .sectionCardProducts {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     padding: 64px 80px 32px 80px;
     gap: 40px;
@@ -177,6 +187,7 @@ header {
     line-height: 36px;
     margin: 0;
 }
+
 .sectionCardProductsBoxText p {
     font-size: 18px;
     font-weight: 400;
@@ -194,17 +205,17 @@ header {
 }
 
 .sectionGaleryLeftSide {
-    display: flex; 
-    align-items: center; 
-    flex-direction: column; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
 .sectionGaleryLeftSide div:last-child img {
-    width: 100%; 
-    border-radius: 24px; 
-    margin: 0; 
+    width: 100%;
+    border-radius: 24px;
+    margin: 0;
     padding: 0;
 }
 
@@ -222,9 +233,9 @@ header {
 }
 
 .sectionGaleryRightSide {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -233,7 +244,7 @@ header {
 }
 
 .sectionGaleryRightSide div img {
-    width: 100%; 
+    width: 100%;
     border-radius: 24px;
 }
 
@@ -247,7 +258,7 @@ header {
 }
 
 .sectionDownloadBox {
-    background: #3C0C60; 
+    background: #3C0C60;
     display: flex;
     border-radius: 24px;
     width: 100%;
@@ -255,10 +266,10 @@ header {
     justify-content: space-between;
 }
 
-.sectionDownloadTextGroup { 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
+.sectionDownloadTextGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 40px;
     gap: 10px;
 }
@@ -273,7 +284,7 @@ header {
 }
 
 .sectionDownloadLinkGroup {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -340,7 +351,7 @@ header {
     justify-content: space-between;
 }
 
-.sectionInfoCardBoxText h1{
+.sectionInfoCardBoxText h1 {
     font-size: 26px;
     font-weight: 400;
     line-height: 36px;
@@ -352,7 +363,7 @@ header {
     line-height: 30px;
 }
 
-.sectionInfoCardBoxButton button{
+.sectionInfoCardBoxButton button {
     padding: 8px 40px 8px 40px;
     border-radius: 4px;
     background: #DFBBFE;
@@ -387,8 +398,8 @@ header {
 }
 
 .sectionFormContainer {
-    display: flex; 
-    gap: 40px; 
+    display: flex;
+    gap: 40px;
     align-items: center;
     justify-content: space-evenly;
     width: 90%;
@@ -404,25 +415,24 @@ header {
 }
 
 .sectionFormBox form {
-    padding: 0; 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-
 .inputBoxContainer {
-    display: flex; 
-    width: 100%; 
+    display: flex;
+    width: 100%;
     justify-content: center;
 }
 
 .inputBox {
-    gap: 15px; 
-    display: flex; 
+    gap: 15px;
+    display: flex;
     width: 100%;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     margin: 20px 0px 20px;
@@ -468,11 +478,11 @@ header {
 }
 
 .sectionFormSecurityBox {
-    display: flex; 
+    display: flex;
     gap: 20px;
 }
 
-.footerList a{
+.footerList a {
     text-decoration: none;
     color: #EAE8E4;
     font-size: 20px;
@@ -480,6 +490,7 @@ header {
     line-height: 23.56px;
 
 }
+
 .sectionFormSecurity h1 {
     font-size: 24px;
     font-weight: 500;
@@ -517,14 +528,14 @@ header {
 /* ----- FOOTER LINE SECTION ----- */
 
 .sectionFooterLine {
-    width: 100%; 
+    width: 100%;
     padding: 40px 0px 0px 0px;
 }
 
 .sectionFooterLine hr {
     border: none;
     height: 1px;
-    background-color: #DFBBFE ;
+    background-color: #DFBBFE;
 }
 
 footer {
@@ -534,8 +545,8 @@ footer {
 }
 
 footer div:first-child {
-    gap: 40px; 
-    display: flex; 
+    gap: 40px;
+    display: flex;
     justify-content: center;
 }
 
@@ -548,10 +559,10 @@ footer div:last-child h1 {
 }
 
 footer div:last-child ul {
-    list-style-type: none; 
-    padding: 0; 
-    margin: 0; 
-    display: flex; 
-    align-items: center; 
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
     gap: 40px;
 }

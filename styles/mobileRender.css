@@ -1,12 +1,10 @@
 @media (max-width: 900px) {
 
-    .sectionHeaderImage {
-        width: 30%;
-    }
-
-    .sectionHeaderImage img {
-        width: 100%;
-        height: 100%;
+    .paragraphFontBlack {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18.85px;
+        letter-spacing: 0.02em;
     }
 
     .sectionHeaderContentLeft {
@@ -17,20 +15,13 @@
         gap: 30px;
     }
 
-    .sectionHeaderCategoryList {
-        display: flex; 
-        width: 100%;
-    }
-
     .sectionHeaderTitleBox {
         width: 100%;
     }
 
     .sectionHeaderTitleBox p {
-        font-size: 10px;
-        font-weight: 400;
+        font-size: 20px;
         line-height: 20px;
-        letter-spacing: 0.02em;
         width: 100%;
     }
 
@@ -38,7 +29,6 @@
         font-size: 24px;
         font-weight: 400;
         line-height: 28.15px;
-        letter-spacing: 0.02em;
     }
 
     .menuCollapse {
@@ -46,9 +36,8 @@
         width: 100vw;
         top: 50px;
         left: 0;
-        height: 50vh;
+        height: 60vh;
         position: absolute;
-        display: none;
         z-index: 1;
     }
 
@@ -70,12 +59,14 @@
         justify-content: center;
         margin: 0px 40px 10px 40px;
     }
+    .iconBack span img:hover{
+        cursor: pointer;
+    }
 
     .backgroundHidden {
         display: none;
         width: 100%;
         position: absolute;
-        height: 44.5vh;
         background: #2D2D2D99;
         bottom: 0;
         height: 100vh;
@@ -85,7 +76,6 @@
         margin: 0;
         padding: 0;
         position: absolute;
-        width: 100%;
         top: 0;
         left: 0;
         z-index: 1;
@@ -97,8 +87,7 @@
 
     #menuIcon {
         display: inherit;
-        margin: 0px 0px 0px 10px;
-        padding: 10px;
+        margin: 0;
     }
     
     #menuIcon:hover {
@@ -121,85 +110,49 @@
 
     .titleFontWhite {
         font-size: 30px;
-        font-weight: 400;
         line-height: 25px;
-        letter-spacing: 0.02em;
-        margin: 0;
-        color: #EAE8E4;
     }
-
-    .sectionHeaderTitleBox p {
-        font-size: 20px;
-    }
-
-    .sectionCardProductsCard {
-        width: 100%;
-    }
-    
 
 /* -------------------------------------- FORM --------------------------------*/
 
     .sectionFormContainer {
         flex-direction: column;
     }
-
     .inputBoxContainer {
         padding: 0;
         flex-direction: column;
     }
-
-    .sectionFormBox form {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
     .formInput {
         width: 100%;
     }
-    
-    .inputBox {
-        width: 100%;
-    }
-
     .sectionFormSecurity {
         flex-direction: column;
     }
-
     #securityVerificationInput {
         width: 40%;
     }
-
-
     .sectionFormBox {
         width: 100%;
     }
-
     .sectionForm {
         padding: 20px 40px 20px 40px;
     }
 
-
     /* ----- GALERY SECTION ----- */
+
     .sectionGalery {
         flex-direction: column;
         padding: 32px 24px 32px 24px;
         gap: 0;
-
     }
-
     .sectionCardProducts {
         padding: 32px 24px 32px 24px;
         gap: 24px;
     }
-
     .sectionGaleryLeftSideBoxText p{
         font-size: 16px;
-        font-weight: 400;
         line-height: 18.85px;
-        letter-spacing: 0.02em;
     }
-
     
 /* ------- SECTION DOWNLOAD ------- */
 
@@ -252,6 +205,8 @@
         width: 90%;
     }
 
+    /* ------ PRODUCTS SECTION ------*/
+
     .sectionProducts {
         padding: 32px 24px 32px 24px;
         gap: 24px;
@@ -293,9 +248,6 @@
         width: 80%;
         padding: 24px;
         gap: 24px;
-    }
-
-    .sectionInfoCardBoxText {
     }
 
     .sectionInfoCardBoxText h1 {
