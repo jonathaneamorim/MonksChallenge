@@ -13,10 +13,14 @@ buttom.addEventListener('click', () => {
     console.log(resultUser);
     console.log(value1);
     console.log(value2);
+
+    var campoResposta = document.querySelector("#result");
     if (resultUser != (value1 + value2)) {
-        alert("Wrong answer");
+        campoResposta.style = 'color: red';
+        campoResposta.innerHTML = "Resposta Errada!";
     } else {
-        alert("Correct answer");
+        campoResposta.style = 'color: green';
+        campoResposta.innerHTML = "Resposta Correta!";
     }
 })
 
